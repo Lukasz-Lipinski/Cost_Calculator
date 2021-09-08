@@ -1,3 +1,13 @@
+# Stack: ReactJS, Sass
+
+## needed installation: node sass, material-ui
+
+This application is able to estimate a budget. 
+There are 3 windows: 
+First is a main view taking data about costs or income.
+Second is a list of added costs
+Third is a list of added income
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
