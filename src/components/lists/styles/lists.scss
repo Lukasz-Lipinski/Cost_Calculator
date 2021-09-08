@@ -1,0 +1,33 @@
+@use "_variables.scss" as *;
+@use "_functions" as *;
+
+
+.income {
+  @include theme($secondary-color, 16px);
+  @include RWDMin();
+  @include RWDMax();
+  @include border();
+  
+  ul {
+    @include list();
+  }
+
+  &-main-summing {
+    @include total($secondary-color-dark);
+  }
+}
+
+.costs {
+  @include theme($tertiary-color, 16px);
+  @include RWDMin();
+  @include RWDMax();
+  @include border();
+
+  ul {
+    @include list();
+  }
+
+  &-main-summing {
+    @include total($tertiary-color-dark);    
+  }
+}

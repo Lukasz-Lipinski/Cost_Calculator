@@ -1,0 +1,58 @@
+@function convertPxToRem($px) {
+  $size: ($px / 16) + rem;
+  @return $size;
+}
+
+@mixin RWDMin() {
+  @media (max-width: 576px) {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@mixin RWDMax() {
+  @media (min-width: 577px) {
+    width: 45vw;
+  }
+}
+
+@mixin inputRWDMax() {
+  @media (min-width: 577px) {
+    width: 60vw;
+  }
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin theme($bgColor, $fontSize, $display: "flex") {
+  margin-top: convertPxToRem(10);
+  background-color: $bgColor;
+  font-size: $fontSize;
+  display: $display;
+  width: convertPxToRem(220);
+  padding: convertPxToRem(2) convertPxToRem(2);
+}
+
+@mixin total($color) {
+  font-weight: bolder;
+  padding-top: convertPxToRem(10);
+  border-top: 1px dashed $color;
+}
+
+@mixin border() {
+  box-shadow: 2px 2px 14px gray;
+  border-radius: 8px;
+}
+
+@mixin saldo() {
+  margin-top: convertPxToRem(15);
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}

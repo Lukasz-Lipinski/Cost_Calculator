@@ -1,0 +1,20 @@
+@use "./_variables.scss" as *;
+@use "./_functions.scss" as *;
+
+.incomeElement {
+  display: flex;
+  justify-content: space-around;
+}
+
+.incomeElement:hover {
+  background-color: $secondary-color-light;
+}
+
+.costsElement {
+  display: flex;
+  justify-content: space-around;
+}
+
+.costsElement:hover {
+  background-color: $tertiary-color-light;
+}

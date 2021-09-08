@@ -1,0 +1,15 @@
+@use "./lists/styles/_functions.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0 auto;
+  font-size: convertPxToRem(20);
+
+  &-col {
+    @include RWDMin();
+    display: flex;
+    justify-content: space-around;
+  }
+}
