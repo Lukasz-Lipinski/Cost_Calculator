@@ -1,5 +1,4 @@
-import { Button } from "@material-ui/core/";
-import { Input, Radio, Select } from "./components";
+import { Input, Radio, Select, AddButton } from "./components";
 import "./form.scss";
 
 export default function Form(props) {
@@ -23,9 +22,9 @@ export default function Form(props) {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <div className="form-center">
+      <div className="form--center">
         <Radio
-          className="form-center-radio"
+          className="form--center__radio"
           incomeRef={IncomeRef}
           costRef={CostsRef}
         />
@@ -33,7 +32,7 @@ export default function Form(props) {
       <Input
         onChange={onChangeProducts}
         value={valueProducts}
-        className="form-product"
+        className="form--product"
         Ref={NameRef}
         label="Products"
         name="products"
@@ -42,26 +41,24 @@ export default function Form(props) {
       <Input
         onChange={onChangePrice}
         value={valuePrice}
-        className="form-price"
+        className="form--price"
         Ref={PriceReference}
         label="Price"
         name="price"
         type="number"
         min="0"
       />
-      <div className="form-center">
-        <Select value={valueCategory} onChange={onChangeCategory} className="form-center-select" CatRef={CatRef} />
+      <div className="form--center">
+        <Select value={valueCategory} onChange={onChangeCategory} className="form--center__select" CatRef={CatRef} />
       </div>
-      <div className="form-center">
-        <Button
-          color="secondary"
-          variant="contained"
+      <div className="form--center">
+        <AddButton
+          className="form--center__btn"
+          label="Add"
           onClick={handleClick}
-        >
-          Add
-        </Button>
+        />
       </div>
-      <span className={`form-saldo${className}`}>
+      <span className={`form--saldo${className}`}>
         Saldo: {saldo}
       </span>
     </form>

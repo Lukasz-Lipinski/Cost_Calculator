@@ -18,15 +18,15 @@
 
   }
 
-  &-center {
+  &--center {
     display: flex;
     justify-content: center;
 
-    &-select {
+    &__select {
       font-size: convertPxToRem(18);
     }
 
-    &-radio {
+    &__radio {
 
       &__label{
         padding: 10px;
@@ -38,21 +38,21 @@
       }
     }
 
-  &-product {
+  &--product {
     width: 60%;
       @media (max-width: 576px){
         width: 75%;
         }
     }
 
-  &-price {
+  &--price {
     width: 60%;
       @media (max-width: 576px){
         width: 75%;
         }
     }
 
-  &-saldo {
+  &--saldo {
     @include saldo;
 
     &-less{
