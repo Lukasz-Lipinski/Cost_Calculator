@@ -1,6 +1,7 @@
+# UPDATED ON 10.09.2021
 # Stack: ReactJS, Sass
 
-## needed installation: node sass, material-ui
+## needed installation: node sass
 
 This application is able to estimate a budget. 
 There are 3 windows: 
