@@ -1,7 +1,9 @@
-@use "../lists/styles/_variables.scss" as *;
-@use "../lists/styles/_functions.scss" as *;
+@use "variables" as *;
+@use "functions" as *;
+@use "keyframes" as *;
 
 .form {
+  opacity: 0;
   background-color: $primary-color-light;
   height: auto;
   margin: 0 auto;
@@ -10,6 +12,7 @@
   @include RWDMax();
   @include border();
   font-size: convertPxToRem(20);
+  animation: toggleOn 0.3s normal ease-in forwards;
 
   & > * {
     padding: 0 convertPxToRem(30) convertPxToRem(20) convertPxToRem(30);

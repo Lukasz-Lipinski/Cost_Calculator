@@ -1,4 +1,4 @@
-import "./styles/listElement.scss";
+import "../styles/listElement.scss";
 
 export default function ListElement(props) {
   return (

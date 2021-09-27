@@ -1,5 +1,5 @@
 import { Input, Radio, Select, AddButton } from "./components";
-import "./form.scss";
+import "../styles/form.scss";
 
 export default function Form(props) {
   const {

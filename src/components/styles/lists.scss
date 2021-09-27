@@ -3,11 +3,14 @@
 
 
 .income {
+  opacity: 0;
   @include theme($secondary-color, 16px);
   @include RWDMin();
   @include RWDMax();
   @include border();
-  
+  animation: toggleOn 0.3s normal ease-in forwards;
+  animation-delay: 0.3s;
+
   ul {
     @include list();
   }
@@ -18,16 +21,19 @@
 }
 
 .costs {
+  opacity: 0;
   @include theme($tertiary-color, 16px);
   @include RWDMin();
   @include RWDMax();
   @include border();
+  animation: toggleOn 0.3s normal ease-in forwards;
+  animation-delay: 0.6s;
 
   ul {
     @include list();
   }
 
   &-main-summing {
-    @include total($tertiary-color-dark);    
+    @include total($tertiary-color-dark);
   }
 }

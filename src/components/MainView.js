@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./mainview.scss";
+import "./styles/mainview.scss";
 
 import { Form } from "./form";
 import { List, ListElement } from "./lists";

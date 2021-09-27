@@ -1,6 +1,7 @@
-import "./styles/lists.scss";
+import "../styles/lists.scss";
 
-export default function List({ title, children, sum, className }) {
+export default function List(props) {
+  const { title, children, sum, className } = props;
   return (
     <div className={className}>
       <h3>{title}</h3>

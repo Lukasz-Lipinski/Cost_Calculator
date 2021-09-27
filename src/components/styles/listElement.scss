@@ -1,5 +1,5 @@
-@use "./_variables.scss" as *;
-@use "./_functions.scss" as *;
+@use "variables" as *;
+@use "functions" as *;
 
 .incomeElement {
   display: flex;
